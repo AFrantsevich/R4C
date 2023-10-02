@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from robots.views import add_robot_in_db
+from robots.views import add_robot_in_db, get_report
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_robot/', add_robot_in_db),
+    path('get_report/', get_report),
 ]
